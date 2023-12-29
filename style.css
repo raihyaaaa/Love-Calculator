@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #e44d26;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d14020;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#result {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.name {
+  font-weight: bold;
+  color: #e44d26; /* You can adjust the color as needed */
+}
+
+/* ... (previous styles) ... */
+
+#loading {
+  display: none;
+  font-size: 20px;
+  color: #e44d26;
+  margin-top: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e44d26;
+  border-radius: 50%;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  animation: rotate 1s linear infinite;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.left-footer {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.percentage {
+  font-weight: bold;
+  color: #e44d26; /* You can adjust the color as needed */
+  font-size: 38px;
+}
